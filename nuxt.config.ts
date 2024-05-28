@@ -1,8 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
-  modules:['@pinia/nuxt'],
+  css: ["~/assets/css/main.css"],
+  modules: ["@pinia/nuxt", "@nuxt/image"],
+  pinia: {
+    storesDirs: ["./stores/**"],
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -11,7 +14,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiBase: '', // NUXT_PUBLIC_API_BASE environment variable
-    }
+      apiBase: "https://run.mocky.io", // NUXT_PUBLIC_API_BASE environment variable
+    },
   },
-})
+});

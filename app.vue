@@ -1,5 +1,6 @@
 <template>
   <div>
-    <p class="text-red-400">dsdzvxfb</p>
+    <NuxtLayout />
+    <NuxtPage />
   </div>
 </template>
