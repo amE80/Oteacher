@@ -38,7 +38,6 @@ export default {
       await this.$api
         .get("/v3/63120735-7fbe-428a-9226-c10ca1ab43b6")
         .then((response) => {
-          //   console.log(response);
           this.sidebarItems = response.data;
         });
     },
